@@ -5,9 +5,9 @@ const Tasks = () => {
     const { tasks , clearTasks } = useContext(TasksContext);
     return ( 
         <div className="tasks">
-            <button className="clear-tasks" onClick={clearTasks}>Clear tasks</button>
+            <button className="clear-tasks" onClick={clearTasks}>Clear todos</button>
             { tasks.length === 0 && (
-                <h3 className='empty-alert'>Tasks list is empty</h3>
+                <h3 className='empty-alert'>Todo list is empty</h3>
             )}
             <ul className="tasks-list">
                 {tasks.map(task => (

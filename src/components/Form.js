@@ -30,17 +30,16 @@ const Form = () => {
         }
         setNewText("");
     }
-    const [showAll, setShowAll] = useState(true);
     return (
         <div className="form-wrapper">
             <div className="app-title">
-                <h2>Task manager app by <a href="https://github.com/MindiaShantadze02">Mindia Shantadze</a></h2>
+                <h2>Todo app by <a href="https://github.com/MindiaShantadze02">Mindia Shantadze</a></h2>
             </div>
             <form className="form container" onSubmit={addTask}>
-                <input type="text" className="task-input" placeholder='Enter a task' 
+                <input type="text" className="task-input" placeholder='Enter a todo' 
                 onChange={handleOnChange}
                 value={newText} />
-                <button type='submit' className="task-submit">Add task</button>
+                <button type='submit' className="task-submit">Add todo</button>
             </form>
             {showAlert && (
                 <p style={{marginLeft:"5px",color: "red"}}>You should enter a value</p>

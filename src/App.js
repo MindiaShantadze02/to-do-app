@@ -7,7 +7,7 @@ function App() {
       <div className="app">
           <Form />
         <div className="container">
-          <h2 style={{marginTop:"10px"}}>Tasks</h2>
+          <h2 style={{marginTop:"10px"}}>Todos</h2>
           <Tasks />
         </div>
       </div>
