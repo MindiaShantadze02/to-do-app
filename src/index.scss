@@ -1,0 +1,203 @@
+$white:#FFF;
+$titleColor:#FFC074;
+$black:#000;
+$lighterBlack:#252525;
+$buttonColor:#B6C867;
+$lightgray:#EEEEEE;
+$seaGreen:#01937C;
+$normalText: 20px;
+$bigText: 35px;
+$smallText: 15px;
+$smallMarginTB: 10px 0;
+$mainColor:#FAF1E6;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+button {
+    cursor: pointer;
+}
+.container {
+    padding: 0 5px;
+}
+.app {
+    background-color: $white;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 5px 5px 10px 2px #aaaaaa;
+    background-color: $mainColor;
+    padding-bottom: 5px;
+}
+.app-title {
+    background-color: $titleColor;
+    color:$black;
+    padding: 25px 0;
+    a {
+        color: $black;
+    }
+}
+.form {
+    display: flex;
+    margin: $smallMarginTB;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.task-input {
+    flex: 2;
+    background-color: $white;
+    border: none;
+    border-bottom: 2px solid $black;
+}
+.task-input::placeholder {
+    color: #a1a1a1;
+}
+.task-submit {
+    flex: 1;
+    background-color: $seaGreen;
+    border: 2px solid $black;
+    cursor: pointer;
+}
+.task-submit , .task-input {
+    padding: 10px 0;
+    font-size: $normalText;
+}
+.tasks-progress-wrapper {
+    width: 98%;
+    height: 35px;
+    border: 1px solid $black;
+    margin: auto;
+}
+.tasks-progress {
+    height: 100%;
+    background-color: $seaGreen;
+    display: flex;
+    align-items: center;
+    color: $white;
+    font-size: $normalText;
+}
+.tasks {
+    height: 350px;
+    background-color: $lightgray;
+    margin: 10px auto;
+    border: 1px solid $black;
+    overflow-y: scroll;
+    > .h2 {
+        padding: 5px 0;
+    }
+}
+.tasks-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+.task {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: $white;
+    padding: 10px 5px;
+    width: 98%;
+    box-shadow: 2px 3px 5px 2px #aaaaaa;
+    margin: auto;
+    margin-top: 10px;
+    > p {
+        flex: 1;
+    }
+}
+.task-commands {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.task-command {
+    padding: 10px;
+    border: 2px solid $black;
+    margin-left: 2px;
+    cursor: pointer;
+}
+.task-command:nth-child(3) {
+    margin-right: 5px;
+}
+.task-done {
+    background-color: $seaGreen;
+    color: $white;
+}
+.task-important {
+    background-color: #f7a000;
+}
+.task-delete {
+    background-color: #da0101;
+}
+.empty-alert {
+    text-align: center;
+    margin-top: 150px;
+}
+.clear-tasks {
+    color: #da0101;
+    font-size: $normalText;
+    border: none;
+    margin-top: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.done-task {
+    background: #a1a1a1;
+}
+.done-task div > button {
+    background: #aaaaaa;
+}
+select {
+    background-color: $white;
+    border: 2px solid $black;
+}
+select > option {
+    background-color: $white;
+    padding: 20px;
+}
+.to-show-buttons {
+    display: flex;
+    > button {
+        padding: 15px 0;
+        flex: 1;
+        border: 2px solid $black;
+        background-color: $white;
+    }
+}
+.task-edit {
+    padding: 10px 0;
+}
+.taks-edit::placeholder {
+    color: #a1a1a1;
+}
+.edit-button {
+    padding: 10px;
+    background-color: $seaGreen;
+    border: 2px solid $black;
+}
+.show-edit {
+    color: $black;
+    text-decoration: underline;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+}
+@media only screen and (max-width:800px) {
+    .app {
+        width: 100%;
+    }
+    .form {
+        flex-direction: column;
+    }
+    .to-show-buttons {
+        margin-top: 5px;
+        flex-direction: column;
+        > button {
+            padding: 15px 0;
+            flex: 1;
+        }
+    }
+}

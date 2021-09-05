@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  padding: 0 5px;
+}
+
+.app {
+  background-color: #FFF;
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  -webkit-box-shadow: 5px 5px 10px 2px #aaaaaa;
+          box-shadow: 5px 5px 10px 2px #aaaaaa;
+  background-color: #FAF1E6;
+  padding-bottom: 5px;
+}
+
+.app-title {
+  background-color: #FFC074;
+  color: #000;
+  padding: 25px 0;
+}
+
+.app-title a {
+  color: #000;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0;
+  gap: 5px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.task-input {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  background-color: #FFF;
+  border: none;
+  border-bottom: 2px solid #000;
+}
+
+.task-input::-webkit-input-placeholder {
+  color: #a1a1a1;
+}
+
+.task-input:-ms-input-placeholder {
+  color: #a1a1a1;
+}
+
+.task-input::-ms-input-placeholder {
+  color: #a1a1a1;
+}
+
+.task-input::placeholder {
+  color: #a1a1a1;
+}
+
+.task-submit {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #01937C;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+.task-submit, .task-input {
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.tasks-progress-wrapper {
+  width: 98%;
+  height: 35px;
+  border: 1px solid #000;
+  margin: auto;
+}
+
+.tasks-progress {
+  height: 100%;
+  background-color: #01937C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFF;
+  font-size: 20px;
+}
+
+.tasks {
+  height: 350px;
+  background-color: #EEEEEE;
+  margin: 10px auto;
+  border: 1px solid #000;
+  overflow-y: scroll;
+}
+
+.tasks > .h2 {
+  padding: 5px 0;
+}
+
+.tasks-list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #FFF;
+  padding: 10px 5px;
+  width: 98%;
+  -webkit-box-shadow: 2px 3px 5px 2px #aaaaaa;
+          box-shadow: 2px 3px 5px 2px #aaaaaa;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.task > p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.task-commands {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.task-command {
+  padding: 10px;
+  border: 2px solid #000;
+  margin-left: 2px;
+  cursor: pointer;
+}
+
+.task-command:nth-child(3) {
+  margin-right: 5px;
+}
+
+.task-done {
+  background-color: #01937C;
+  color: #FFF;
+}
+
+.task-important {
+  background-color: #f7a000;
+}
+
+.task-delete {
+  background-color: #da0101;
+}
+
+.empty-alert {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.clear-tasks {
+  color: #da0101;
+  font-size: 20px;
+  border: none;
+  margin-top: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.done-task {
+  background: #a1a1a1;
+}
+
+.done-task div > button {
+  background: #aaaaaa;
+}
+
+select {
+  background-color: #FFF;
+  border: 2px solid #000;
+}
+
+select > option {
+  background-color: #FFF;
+  padding: 20px;
+}
+
+.to-show-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.to-show-buttons > button {
+  padding: 15px 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: 2px solid #000;
+  background-color: #FFF;
+}
+
+.task-edit {
+  padding: 10px 0;
+}
+
+.taks-edit::-webkit-input-placeholder {
+  color: #a1a1a1;
+}
+
+.taks-edit:-ms-input-placeholder {
+  color: #a1a1a1;
+}
+
+.taks-edit::-ms-input-placeholder {
+  color: #a1a1a1;
+}
+
+.taks-edit::placeholder {
+  color: #a1a1a1;
+}
+
+.edit-button {
+  padding: 10px;
+  background-color: #01937C;
+  border: 2px solid #000;
+}
+
+.show-edit {
+  color: #000;
+  text-decoration: underline;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .app {
+    width: 100%;
+  }
+  .form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .to-show-buttons {
+    margin-top: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .to-show-buttons > button {
+    padding: 15px 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+/*# sourceMappingURL=index.css.map */
